@@ -7,10 +7,8 @@ channel_targets:
 cxx_compiler:
 - vs2015
 numpy:
-- '1.11'
+- '1.14'
 pin_run_as_build:
-  pyqt:
-    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
@@ -18,17 +16,13 @@ pin_run_as_build:
     max_pin: x.x
   vc:
     max_pin: x
-pyqt:
-- '5.6'
 python:
 - '3.6'
 qt:
-- '5.6'
+- '5.12'
 vc:
 - '14'
 zip_keys:
-- - pyqt
-  - qt
 - - python
   - vc
   - c_compiler
