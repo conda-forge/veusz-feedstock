@@ -19,6 +19,11 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ cdt('mesa-libgl-devel') }}  # [linux]
+    - {{ cdt('mesa-dri-drivers') }}  # [linux]
+    - {{ cdt('libselinux') }}  # [linux]
+    - {{ cdt('libxdamage') }}  # [linux]
+    - {{ cdt('libxxf86vm') }}  # [linux]
   host:
     - python
     - pip
@@ -27,6 +32,7 @@ requirements:
     - sip
     - pyqt
     - numpy
+    - xorg-libxfixes  # [linux]
   run:
     - python
     - qt
