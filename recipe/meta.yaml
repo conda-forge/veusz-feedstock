@@ -39,6 +39,7 @@ requirements:
   run:
     - python
     - qt
+    - sip
     - pyqt
     - {{ pin_compatible('numpy') }}
     - setuptools
@@ -46,8 +47,8 @@ requirements:
 test:
   imports:
     - veusz
-#  commands:
-#    - veusz -platform minimal --help
+  commands:
+    - veusz -platform minimal --help
 
 app:
   entry: veusz
