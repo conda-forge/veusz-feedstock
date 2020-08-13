@@ -54,7 +54,7 @@ app:
 
 about:
   home: https://veusz.github.io/
-  license: GPL-2.0
+  license: GPL-2.0-or-later
   license_family: GPL
   license_file: COPYING
   summary: 2D and 3D interactive scientific plotting GUI and module
