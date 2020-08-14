@@ -1,6 +1,6 @@
 {% set name = "veusz" %}
-{% set version = "3.1" %}
-{% set sha256 = "c2e2c1bd6891c21fc05484f3b87db52274378e9bf8d4cfa44ea689e56b22f77e" %}
+{% set version = "3.2.1" %}
+{% set sha256 = "9eaf95a2a8cae2d317e7ee47e73f5cf58d191b16c051ae0a1dc399e6f7757503" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [win and vc<14]
 
 requirements:
@@ -49,15 +49,15 @@ test:
 app:
   entry: veusz
   icon: veusz_64.png
-  summary: "Veusz 2D and 3D interactive scientific plotting"
+  summary: Veusz 2D and 3D interactive scientific plotting
   type: desk
 
 about:
   home: https://veusz.github.io/
-  license: GPL-2.0
+  license: GPL-2.0-or-later
   license_family: GPL
   license_file: COPYING
-  summary: '2D and 3D interactive scientific plotting GUI and module'
+  summary: 2D and 3D interactive scientific plotting GUI and module
 
   description: |
     Veusz is a 2D and 3D scientific plotting package, designed to
