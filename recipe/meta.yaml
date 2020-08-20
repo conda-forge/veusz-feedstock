@@ -43,8 +43,8 @@ requirements:
 test:
   imports:
     - veusz
-  commands:
-    - veusz -platform minimal --help
+#  commands:
+#    - veusz -platform minimal --help
 
 app:
   entry: veusz
