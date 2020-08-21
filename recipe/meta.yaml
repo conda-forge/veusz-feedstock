@@ -43,10 +43,9 @@ requirements:
 test:
   imports:
     - veusz
-    - veusz.helpers.qtloops
+    - veusz.helpers.qtloops # separate import to check C extensions
   commands:
     - veusz -platform minimal --help  # [not win]
-    - veusz --help  # [win]
 
 app:
   entry: veusz
