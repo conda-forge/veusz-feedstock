@@ -44,8 +44,9 @@ test:
   imports:
     - veusz
     - veusz.helpers.qtloops
-#  commands:
-#    - veusz -platform minimal --help
+  commands:
+    - veusz -platform minimal --help # [not win]
+    - veusz --help # [win]
 
 app:
   entry: veusz
