@@ -43,6 +43,7 @@ requirements:
 test:
   imports:
     - veusz
+    - veusz.helpers.qtloops
 #  commands:
 #    - veusz -platform minimal --help
 
