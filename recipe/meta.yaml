@@ -16,6 +16,7 @@ build:
   skip: true  # [win and vc<14]
   entry_points:
     - veusz = veusz.veusz_main:run
+  osx_is_app: true
 
 requirements:
   build:
