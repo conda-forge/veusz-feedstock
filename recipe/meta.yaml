@@ -14,6 +14,8 @@ build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [win and vc<14]
+  entry_points:
+    - veusz = veusz.veusz_main:run
 
 requirements:
   build:
@@ -45,7 +47,7 @@ test:
     - veusz
     - veusz.helpers.qtloops # separate import to check C extensions
   commands:
-    - veusz -platform minimal --help  # [not win]
+    - veusz -platform minimal --help
 
 app:
   entry: veusz
