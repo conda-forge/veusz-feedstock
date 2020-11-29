@@ -1,6 +1,6 @@
 {% set name = "veusz" %}
-{% set version = "3.2.1" %}
-{% set sha256 = "9eaf95a2a8cae2d317e7ee47e73f5cf58d191b16c051ae0a1dc399e6f7757503" %}
+{% set version = "3.3" %}
+{% set sha256 = "2188763d16c1270b2d51d7c608afb1748dd5a1736559af1a82500b2763d4921d" %}
 
 package:
   name: {{ name|lower }}
@@ -9,6 +9,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - sip-exe.patch # look for sip.exe before sip
 
 build:
   number: 0

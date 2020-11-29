@@ -1,0 +1,13 @@
+diff --git a/pyqtdistutils.py b/pyqtdistutils.py
+index 4874e1aa..f497b58c 100644
+--- a/pyqtdistutils.py
++++ b/pyqtdistutils.py
+@@ -104,7 +104,7 @@ class build_ext(distutils.command.build_ext.build_ext):
+             os.environ.get('SIP_EXE') or
+             DEF_SIP_BIN or
+             find_on_path(
+-                ('sip5', 'sip-qt5', 'sip', 'sip5.exe', 'sip.exe'), 'sip')
++                ('sip5', 'sip-qt5', 'sip5.exe', 'sip.exe', 'sip'), 'sip')
+         )
+ 
+     def _get_sip_inc_dir(self, build_cmd):
