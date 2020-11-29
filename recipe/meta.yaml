@@ -10,7 +10,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
-    - sip-exe.patch # look for sip.exe before sip
+    - sip.patch # look for sip.exe before sip
 
 build:
   number: 0
