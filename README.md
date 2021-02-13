@@ -5,9 +5,13 @@ Home: https://veusz.github.io/
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/veusz-feedstock/blob/master/LICENSE.txt)
 
 Summary: 2D and 3D interactive scientific plotting GUI and module
+
+Development: https://veusz.github.io/development/
+
+Documentation: https://veusz.github.io/help-support/
 
 Veusz is a 2D and 3D scientific plotting package, designed to
 create publication-ready PDF and SVG output. It features GUI,
