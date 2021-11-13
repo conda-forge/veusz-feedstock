@@ -32,8 +32,8 @@ requirements:
     - pip
     - setuptools
     - qt
-    - sip
     - pyqt
+    - pyqt5-sip
     - numpy
     - xorg-libxfixes  # [linux]
   run:
@@ -42,7 +42,6 @@ requirements:
     - pyqt
     - {{ pin_compatible('numpy') }}
     - setuptools
-    - sip
 
 test:
   imports:
