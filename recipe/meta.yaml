@@ -13,7 +13,7 @@ source:
     - sip4.patch  # make build system work with sip-4
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [win and vc<14]
   entry_points:
