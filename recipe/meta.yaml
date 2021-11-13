@@ -1,6 +1,6 @@
 {% set name = "veusz" %}
-{% set version = "3.3.1" %}
-{% set sha256 = "e02960630894db5c070ef7b6abd708b520156fd85b47617e7c973cce7188f0e0" %}
+{% set version = "3.4" %}
+{% set sha256 = "cd9fb0a7df1cfcdb671883435de968b52dffe11145613e42459a8979efd9cc5c" %}
 
 package:
   name: {{ name|lower }}
@@ -9,6 +9,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - sip4.patch  # make build system work with sip-4
 
 build:
   number: 0
