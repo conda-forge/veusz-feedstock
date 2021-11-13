@@ -11,9 +11,10 @@ source:
   sha256: {{ sha256 }}
   patches:
     - sip4.patch  # make build system work with sip-4
+    - flags.patch # incompatibility with setting flags on widget
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [win and vc<14]
   entry_points:
