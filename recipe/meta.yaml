@@ -14,7 +14,7 @@ source:
     - flags.patch # incompatibility with setting flags on widget
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [win and vc<14]
   entry_points:
@@ -34,14 +34,14 @@ requirements:
     - python
     - pip
     - setuptools
-    - qt
+    - qt-main
     - pyqt
     - pyqt5-sip
     - numpy
     - xorg-libxfixes  # [linux]
   run:
     - python
-    - qt
+    - qt-main
     - pyqt
     - {{ pin_compatible('numpy') }}
     - setuptools
