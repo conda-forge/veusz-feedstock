@@ -10,7 +10,6 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
-    - sip4.patch  # make build system work with sip-4
     - flags.patch # incompatibility with setting flags on widget
 
 build:
