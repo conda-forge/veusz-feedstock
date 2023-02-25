@@ -1,6 +1,6 @@
 {% set name = "veusz" %}
-{% set version = "3.5.3" %}
-{% set sha256 = "d4c3c29a4d314a97d7ec25cf154e381df3c8f5910a94e1bd993e7ba1c4d69473" %}
+{% set version = "3.6" %}
+{% set sha256 = "d8f9f93c8e73e1913be3d3ae3320d1b90d1b3f81d33bd93c6e2f5ff7b3c353e3" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [win and vc<14]
   entry_points:
