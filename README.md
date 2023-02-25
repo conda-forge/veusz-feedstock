@@ -1,11 +1,11 @@
-About veusz
-===========
+About veusz-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/veusz-feedstock/blob/main/LICENSE.txt)
 
 Home: https://veusz.github.io/
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/veusz-feedstock/blob/main/LICENSE.txt)
 
 Summary: 2D and 3D interactive scientific plotting GUI and module
 
