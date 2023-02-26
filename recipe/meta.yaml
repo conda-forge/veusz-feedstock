@@ -1,6 +1,6 @@
 {% set name = "veusz" %}
-{% set version = "3.6.1" %}
-{% set sha256 = "4511c4f846b669988b6b81cc8d8e491bfc6a521ab89b1d1b711926afc6eb28d8" %}
+{% set version = "3.6.2" %}
+{% set sha256 = "c2171ac45e4b30424d8fc35261e2e99dbe6e25ba1197ebc24355b106b26395d1" %}
 
 package:
   name: {{ name|lower }}
