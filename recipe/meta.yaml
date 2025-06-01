@@ -32,16 +32,16 @@ requirements:
     - python
     - pip
     - setuptools
-    - qt-main
-    - pyqt
-    - pyqt5-sip
+    - qt-main >=6,<7
+    - pyqt >=6,<7
+    - pyqt6-sip
     - numpy
     - tomli
     - xorg-libxfixes  # [linux]
   run:
     - python
-    - qt-main
-    - pyqt
+    - qt-main >=6,<7
+    - pyqt >=6,<7
     - setuptools
 
 test:
