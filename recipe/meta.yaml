@@ -17,6 +17,8 @@ build:
   entry_points:
     - veusz = veusz.veusz_main:run
   osx_is_app: true
+  script_env:
+    - MACOSX_DEPLOYMENT_TARGET=11.0 # [osx]
 
 requirements:
   build:
@@ -38,7 +40,6 @@ requirements:
     - numpy
     - tomli
     - xorg-libxfixes  # [linux]
-    - macosx_deployment_target_osx-arm64 ==11.0  # [osx]
   run:
     - python
     - qt6-main
