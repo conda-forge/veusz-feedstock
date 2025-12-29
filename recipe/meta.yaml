@@ -17,8 +17,6 @@ build:
   entry_points:
     - veusz = veusz.veusz_main:run
   osx_is_app: true
-  script_env:
-    - MACOSX_DEPLOYMENT_TARGET=11.0  # [osx]
 
 requirements:
   build:
