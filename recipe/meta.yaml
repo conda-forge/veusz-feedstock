@@ -18,7 +18,7 @@ build:
     - veusz = veusz.veusz_main:run
   osx_is_app: true
   script_env:
-    - MACOSX_DEPLOYMENT_TARGET=11.0 # [osx]
+    - MACOSX_DEPLOYMENT_TARGET=11.0  # [osx]
 
 requirements:
   build:
@@ -31,13 +31,14 @@ requirements:
     - {{ cdt('libxdamage') }}  # [linux]
     - {{ cdt('libxxf86vm') }}  # [linux]
   host:
-    - python
+    - libgl-devel  # [linux]
+    - numpy
     - pip
-    - setuptools
-    - qt6-main
     - pyqt6
     - pyqt6-sip
-    - numpy
+    - python
+    - qt6-main
+    - setuptools
     - tomli
     - xorg-libxfixes  # [linux]
   run:
