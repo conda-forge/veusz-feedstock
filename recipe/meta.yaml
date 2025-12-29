@@ -38,6 +38,7 @@ requirements:
     - numpy
     - tomli
     - xorg-libxfixes  # [linux]
+    - macosx_deployment_target_osx-arm64 == 11.0  # [osx]
   run:
     - python
     - qt6-main
