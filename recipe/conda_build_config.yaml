@@ -1,0 +1,5 @@
+c_stdlib_version:              # [osx]
+  - '11.0'                     # [osx]
+# pyqt not yet available for qt>6.8
+qt6_main:
+  - '6.8'
